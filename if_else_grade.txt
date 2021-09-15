@@ -1,0 +1,36 @@
+package sampleproject;
+ import java.util.Scanner;
+ 
+public class Grader {
+
+	public static void main(String[] args)
+	
+	{
+		
+      int score;
+     String  grade;
+      System.out.println("Enter the student score\n");
+      Scanner keyboard = new Scanner(System.in);
+      score = keyboard.nextInt();
+      if(score>=90)
+    	  grade = "\n  Congratulation You got A+ grade";
+      else if(score>=80)
+    	  grade ="\n   Congratulation You got A grade";
+      else if(score>=70)
+    	  grade = "\n  Congratulation You got B+ grade";
+      else if(score>=60)
+    	  grade = "\n  Congratulation You got B grade";
+      else if(score>=50)
+    	  grade = "\n  Congratulation You got C grade";
+      else 
+    	  grade ="\n    You are Fail";
+      System.out.println("\n Your Score is ="+score +grade);
+      
+    	  
+      
+      
+      
+      
+	}
+
+}
